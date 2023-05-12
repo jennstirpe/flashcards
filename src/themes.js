@@ -7,7 +7,8 @@ export const lightTheme = {
         textMain: "#424242",
         textSecondary: "#868686",
         active: "#2086ec",
-        new: "#413a78"
+        new: "#413a78",
+        border: "#e6e6e6"
     }
 }
 
@@ -18,6 +19,7 @@ export const darkTheme = {
         textMain: "#f5f5f5",
         textSecondary: "#525252",
         active: "#af64b9",
-        new: "#413a78"
+        new: "#413a78",
+        border: "#e6e6e6"
     }
 }

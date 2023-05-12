@@ -27,11 +27,26 @@ export const StyledNavbar = styled.nav`
             background: none;
             border: none;
 
+            .nav-item-icon {
+                fill: ${({theme}) => theme.colors.textSecondary};
+            }
+
             .nav-item-label {
                 letter-spacing: 1px;
                 font-size: .8rem;
                 margin-top: .25rem;
                 color: ${({theme}) => theme.colors.textSecondary};
+            }
+        }
+
+        .active {
+
+            .nav-item-icon {
+                fill: ${({theme}) => theme.colors.active};
+            }
+
+            .nav-item-label {
+                color: ${({theme}) => theme.colors.active};
             }
         }
     }
