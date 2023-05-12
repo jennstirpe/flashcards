@@ -18,7 +18,7 @@ const GlobalStyles = createGlobalStyle`
         color: ${({theme}) => theme.colors.textMain};
         font-family: 'Open Sans', sans-serif;
         // font-weight: 300, 400, 600
-        padding-top: 5rem;
+        padding-top: 2rem;
 
         .themeToggle {
             position: absolute;
@@ -36,6 +36,27 @@ const GlobalStyles = createGlobalStyle`
             &:hover {
                 cursor: pointer;
             }
+        }
+
+        section {
+            width: 100vw;
+
+            .container {
+                max-width: 45rem;
+                margin: 0 auto;
+                overflow: scroll;
+            }
+
+            h1  {
+                font-size: 2.25rem;
+                
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        body {
+            padding-top: 5rem;
         }
     }
 `;

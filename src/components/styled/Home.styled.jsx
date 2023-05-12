@@ -1,20 +1,13 @@
 import { styled } from "styled-components";
 
 export const StyledHome = styled.section`
-    width: 100vw;
-    
+  
     .container {
-        max-width: 45rem;
-        margin: 0 auto;
 
         .home-header {
             border-bottom: 3px solid ${({theme}) => theme.colors.border}; 
             margin: 0 auto;
             padding: 1rem;
-
-            .home-header-title {
-                font-size: 2.25rem;
-            }
 
             .home-header-search {
                 padding: .5rem 0;

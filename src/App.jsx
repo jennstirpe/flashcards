@@ -6,6 +6,7 @@ import { lightTheme, darkTheme } from "./themes";
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
+import Stats from "./components/Stats";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(lightTheme);
@@ -18,14 +19,30 @@ function App() {
     }
   }
 
+  const [ view, changeView ] = useState("home");
+
+  function switchView(newView) {
+      changeView(newView)
+  }
+
+
   return (
     <ThemeProvider theme={currentTheme}>
       <>
       <GlobalStyles />
 
       <button className="themeToggle" onClick={toggleTheme}> theme </button>
-        <Home />
-        <Navbar />
+
+        <Navbar switchView={switchView} />
+
+        {
+          view === "home" ? <Home /> :
+          view === "stats" ? <Stats /> : null
+        }
+
+
+
+
       </>
     </ThemeProvider>
   )

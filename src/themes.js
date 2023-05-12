@@ -8,18 +8,18 @@ export const lightTheme = {
         textSecondary: "#868686",
         active: "#2086ec",
         new: "#413a78",
-        border: "#e6e6e6"
+        border: "#e6e6e6",
     }
 }
 
 export const darkTheme = {
     colors: {
         bgMain: "#000000",
-        bgSecondary: "#181818",
+        bgSecondary: "#151515",
         textMain: "#f5f5f5",
-        textSecondary: "#525252",
-        active: "#af64b9",
+        textSecondary: "#606060",
+        active: "#af65b7",
         new: "#413a78",
-        border: "#e6e6e6"
+        border: "#151515",
     }
 }
