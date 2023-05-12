@@ -61,6 +61,7 @@ export const StyledHome = styled.section`
                 justify-content: flex-end;
                 padding: .5rem;
                 border-bottom: 2px solid ${({theme}) => theme.colors.border};
+                font-size: .8rem;
 
                 svg {
                     margin-right: .3rem;

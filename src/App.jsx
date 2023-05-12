@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Stats from "./components/Stats";
 import Create from "./components/Create";
+import Search from "./components/Search";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(lightTheme);
@@ -48,7 +49,8 @@ function App() {
 
         {
           view === "home" ? <Home /> :
-          view === "stats" ? <Stats /> : null
+          view === "stats" ? <Stats /> : 
+          view === "search" ? <Search /> : null
         }
 
         {

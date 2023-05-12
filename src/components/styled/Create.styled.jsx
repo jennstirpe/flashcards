@@ -21,7 +21,8 @@ export const StyledCreate = styled.section `
             padding: 1rem;
             color: ${({theme}) => theme.colors.accent};
             font-weight: 300;
-            font-size: 1rem;
+            font-size: 1.25rem;
+            letter-spacing: .75px;
             border: none;
             background: ${({theme}) => theme.colors.bgMain};
             margin-bottom: .05rem;
