@@ -7,6 +7,7 @@ export const lightTheme = {
         textMain: "#424242",
         textSecondary: "#868686",
         active: "#2086ec",
+        accent: "#35b5ff",
         new: "#413a78",
         border: "#e6e6e6",
     }
@@ -19,6 +20,7 @@ export const darkTheme = {
         textMain: "#f5f5f5",
         textSecondary: "#606060",
         active: "#af65b7",
+        accent: "#736ba5",
         new: "#413a78",
         border: "#151515",
     }

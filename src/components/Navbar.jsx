@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { StyledNavbar } from "./styled/Navbar.styled"
 
-export default function Navbar({ switchView }) {
+export default function Navbar({ switchView, openCreate }) {
     const [ active, setActive ] = useState("home");
 
     function handleSwitchView(view) {
@@ -20,7 +20,7 @@ export default function Navbar({ switchView }) {
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#828282" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" className="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
                 <span className="nav-item-label">Stats</span>
             </button>
-            <button onClick={() => handleSwitchView("create")} className={active === "create" ? "nav-item active" : "nav-item"}>
+            <button onClick={() => openCreate()} className="nav-item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#828282" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                 <span className="nav-item-label">Create</span>
             </button>

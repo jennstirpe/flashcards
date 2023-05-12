@@ -7,6 +7,7 @@ import { lightTheme, darkTheme } from "./themes";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Stats from "./components/Stats";
+import Create from "./components/Create";
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(lightTheme);
@@ -23,8 +24,18 @@ function App() {
 
   function switchView(newView) {
       changeView(newView)
+      setCreateActive(false)
   }
 
+  const [ createActive, setCreateActive ] = useState(false);
+
+  function openCreate() {
+    setCreateActive(true)
+  }
+
+  function closeCreate() {
+    setCreateActive(false)
+  }
 
   return (
     <ThemeProvider theme={currentTheme}>
@@ -33,14 +44,16 @@ function App() {
 
       <button className="themeToggle" onClick={toggleTheme}> theme </button>
 
-        <Navbar switchView={switchView} />
+        <Navbar switchView={switchView} openCreate={openCreate} createActive={createActive} />
 
         {
           view === "home" ? <Home /> :
           view === "stats" ? <Stats /> : null
         }
 
-
+        {
+          createActive === true ? <Create closeCreate={closeCreate} /> : null
+        }
 
 
       </>

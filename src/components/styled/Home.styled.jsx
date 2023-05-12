@@ -55,7 +55,7 @@ export const StyledHome = styled.section`
         .stacks {
 
             .stacks-label {
-                color: #35b5ff;
+                color: ${({theme}) => theme.colors.accent};
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
@@ -100,6 +100,7 @@ export const StyledHome = styled.section`
                     right: .65rem;
                     display: flex;
                     align-items: center;
+                    color: ${({theme}) => theme.colors.accent};
 
                     .grade {
                         font-weight: 200;
